@@ -1,0 +1,331 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(./images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  gap: 1rem;
+  max-width: 80vw;
+  min-height: 100vh;
+  margin: 1rem auto;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card1 {
+  color: white;
+  width: 50%;
+
+  & h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  & p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    color: rgba($color: white, $alpha: 0.9);
+  }
+}
+
+.card2 {
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  width: 50%;
+}
+
+.card21 {
+  width: 30rem;
+  background-color: hsl(248, 32%, 49%);
+  height: 3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 7px 0px 0px rgba($color: #666, $alpha: 0.3);
+
+  p {
+    color: rgba($color: white, $alpha: 0.8);
+  }
+
+  & span {
+    font-weight: 900;
+    color: white;
+  }
+}
+
+.card22 {
+  & form {
+    display: grid;
+    padding: 2rem;
+    background-color: white;
+    gap: 1rem;
+    width: 30rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    position: relative;
+  }
+}
+
+input {
+  height: 3rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+#fnerroricon {
+  position: absolute;
+  top: 25%;
+  left: 90%;
+}
+#lnerroricon {
+  position: absolute;
+  top: 25%;
+  left: 90%;
+}
+#emailerroricon {
+  position: absolute;
+  top: 25%;
+  left: 90%;
+}
+#passerroricon {
+  position: absolute;
+  top: 25%;
+  left: 90%;
+}
+
+input[type="button"] {
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+
+  & + p {
+    font-size: 0.8rem;
+    color: #aaa;
+
+    & > span {
+      color: hsl(0, 100%, 74%);
+    }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.show {
+  display: block;
+  font-size: 0.8rem;
+  text-align: right;
+  margin-top: -0.6rem;
+  color: hsl(0, 100%, 74%);
+}
+
+.showicon {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.first {
+  position: relative;
+  width: 100%;
+}
+.last {
+  position: relative;
+  width: 100%;
+}
+.email {
+  position: relative;
+  width: 100%;
+}
+.password {
+  position: relative;
+  width: 100%;
+}
+
+#first {
+  height: 3rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+#last {
+  height: 3rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+#email {
+  height: 3rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+#password {
+  height: 3rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1200px) {
+  main {
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 1070px) {
+  main {
+    max-width: 94vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    min-height: 100vh;
+    background-image: url(./images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 85%;
+    min-height: 100vh;
+    margin: 1rem auto;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 2rem;
+  }
+
+  .card1 {
+    color: white;
+    width: 100%;
+    text-align: center;
+  }
+
+  .card2 {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    min-height: 100vh;
+    background-image: url(./images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 85%;
+    min-height: 100vh;
+    margin: 1rem auto;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 2rem;
+  }
+
+  .card1 {
+    color: white;
+    width: 100%;
+    text-align: center;
+
+    & h1 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .card2 {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card21 {
+    width: 20rem;
+    height: 5rem;
+    padding: 1.5rem 4rem 1.5rem 4rem;
+    line-height: 1.5rem;
+  }
+
+  .card22 {
+    & form {
+      display: grid;
+      padding: 2rem;
+      background-color: white;
+      gap: 1rem;
+      width: 20rem;
+      border-radius: 0.5rem;
+      text-align: center;
+    }
+  }
+
+  #fnerroricon {
+    position: absolute;
+    top: 25%;
+    left: 85%;
+  }
+  #lnerroricon {
+    position: absolute;
+    top: 25%;
+    left: 85%;
+  }
+  #emailerroricon {
+    position: absolute;
+    top: 25%;
+    left: 85%;
+  }
+  #passerroricon {
+    position: absolute;
+    top: 25%;
+    left: 85%;
+  }
+}
